@@ -13,7 +13,6 @@ The code defines three main classes:
 # Character Class:
 Attributes:
 
-
 -name: The player's name (e.g., "Hero").
 
 -health: The player's current health (initialized at 100).
@@ -30,16 +29,17 @@ Attributes:
 
 -use_item(item): Uses an item from the player's inventory. Depending on the item's effect (heal or boost_attack), it applies a corresponding effect and removes the item from the inventory.
 
--Item Class:
+# Item Class:
 
-# Attributes:
+Attributes:
 
 -name: The name of the item (e.g., "Healing Potion").
 
 -effect: The effect the item has on the player (e.g., "heal" or "boost_attack").
 
-Enemy Class:
-# Attributes:
+# Enemy Class:
+
+Attributes:
 
 -name: The enemy's name (e.g., "Goblin").
 
@@ -49,30 +49,28 @@ Enemy Class:
 
 # Methods:
 
-attack(target): The enemy attacks the player or another target, reducing their health by the enemy's attack power.
+-attack(target): The enemy attacks the player or another target, reducing their health by the enemy's attack power.
 
 # Game Flow and Logic:
 
-The game flow consists of the following steps:
-
 # Player's Turn:
 
-The player is prompted to choose an action: attack, heal, or use an item.
+-The player is prompted to choose an action: attack, heal, or use an item.
 
-If the player chooses "attack", the player attacks the enemy, reducing the enemy's health by the player's attack power.
+-If the player chooses "attack", the player attacks the enemy, reducing the enemy's health by the player's attack power.
 
-If the player chooses "heal", the player's health is increased by 20.
+-If the player chooses "heal", the player's health is increased by 20.
 
-If the player chooses "use item", the player is presented with the items in their inventory and can choose one to use. Items can either heal the player or boost their attack power.
+-If the player chooses "use item", the player is presented with the items in their inventory and can choose one to use. Items can either heal the player or boost their attack power.
 
 # Enemy's Turn:
 
-If the enemy is still alive after the player's turn, the enemy attacks the player, reducing the player's health by the enemy's attack power.
+-If the enemy is still alive after the player's turn, the enemy attacks the player, reducing the player's health by the enemy's attack power.
 
-Health Status:
+# Health Status:
 
-After each turn, the current health of both the player and the enemy is printed for the player to track.
+-After each turn, the current health of both the player and the enemy is printed for the player to track.
 
-Game End:
+# Game End:
 
-The game ends when either the player or the enemy's health reaches zero. If the player's health is greater than zero, the player wins; otherwise, the player loses.
+-The game ends when either the player or the enemy's health reaches zero. If the player's health is greater than zero, the player wins; otherwise, the player loses.
